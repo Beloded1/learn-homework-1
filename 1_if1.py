@@ -19,7 +19,16 @@ def main():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
+def hello_user(user_age):
+  if user_age <= 7:
+    return 'Учиться в детском саду'
+  elif user_age <= 18:
+    return 'Учиться в школе'
+  else: 
+    return 'Работать'
+    
+print(hello_user(6))
+
 
 if __name__ == "__main__":
     main()
